@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <!-- -------------------------------navbar--------------------------------- -->
+    <div class="container" id="header">
+        <nav>
+            <img src="https://t3.ftcdn.net/jpg/04/14/30/66/360_F_414306684_cxBJCOBZVTjCD5WEQJ9Orgvpjnxbe5H7.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me </a></li>
+                <li><a href="#skill">Education</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+              </ul>
+              <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>
+
+  <!-- -------------------------mid section-----------------------------------------       -->
+        <div class="text">
+         <p>Hi!!</p><p class="p1"> I'm Monesa Dalani<br><p> Engineering student </p>
+        </div>
+
+        <div class="pic">
+            <img src="pic.jpg" alt="">
+        </div>
+
+        
+  <!-- -----------------------------------------About me-------------------------- -->
+  <div class="row">  
+  <div class="c1" id="about">
+         
+        <div class="grid-item">
+            <div class="card">
+        
+              <div class="card-content">
+                <h1 class="card-header">About</h1>
+                 <p class="card-text" align="justify"> 
+               Hello World, I'm Monesa Hanif Dalani passionate and industrious person. I'm excited to make a leap and continue refining the knowledge and skills that I have gained during my course. Dedicated and soft-spoken with great teamwork ability
+                </p>
+            
+              </div>
+            </div>
+          </div>
+      </div>  
+            
+          <div class="c2" id="skill">
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Projects')">Projects </p>
+                <p class="tab-links" onclick="opentab('education')"> Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>C Pogramming</span><br></li><br>
+                    <li><span>HTML/CSS</span><br> </li><br>
+                    <li><span>Python</span><br></li><br>
+                    <li><span>Javascript</span><br></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Projects">
+                <ul>
+                    <li><span>Automatic Waste Segregator</span><br>The system consists of three bins, each one for wet, metal, and dry waste. The conveyer belt system detects the incoming waste and classifies it as metal, dry or wet using different sensors connected to the system and deflects it in the respective bin. There is also a bin changer it automatically replace tha full bin with the empty on </li>
+                    <li><span>Voice Based Email for Blind</span><br> This project proposes a python based application, designed specifically for visually impaired 
+                        people.  The VMAIL system can be used 
+                        by a blind person and also illiterate people to access mails easily and adeptly. It has language converter. we are
+                        using different packages of python.
+                        </li>
+                    <!-- <li><span></span><br>Danceee</li> -->
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span> BE in IT Engineering (2020-2023)</span><br>Currently pursuing the degree in <strong> Universal College of <br>Engineering</strong> with the 8.95 cgpi.</li><br>
+                    <li><span>Diploma in Computer Engineering (2017-2020)</span><br>I have done<strong> Bhausaheb Vartak Polytechnic </strong>for 3 years <br>and recieve 94.00%.</li><br>
+                    <li><span>SSC (2016-2017)</span><br>I have done my school from <strong> Mount Mary English High<br> School</strong> and scored 74.00%.</li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+<div class="b1">
+    <a target="_blank" class="btn1" href="MDR (1).pdf">View Resume</a>
+</div>
+        
+        
+<!-- -------------------------------------form---------------------------------------- -->
+<div class="row">
+<div class="c3">
+    <h1>Contact Us</h1><hr>
+
+    <p class="p0">9028223694<i class="fas fa-phone-alt"></i></p>
+  <p class="p2">dalanimona@gmail.com <i class="fa-solid fa-envelope"></i></p>
+    
+<div class="social">
+    
+<a href=""><i class="fab fa-facebook-square"></i></a>
+<a href=""><i class="fab fa-instagram"></i></a>
+<a href=""><i class="fab fa-twitter"></i></a>
+<a href=""><i class="fa-brands fa-github"></i></a>
+
+
+
+
+</div>
+        
+</div>
+<div class="c4" id="contact">
+<form action="">
+    <input type="text" name="Name" placeholder="Name" required><br>
+    <input type="email" name="Email" placeholder="Emal" required><br>
+    <input class="msg " type="text-box" row="6" name="Message" placeholder="Message" ><br>
+    <input class="btn2" type="submit" value="Submit">
+        
+</form> 
+</div>
+</div>
+</div></div>
+
+<!-- ------------------------footer section---------------------- -->
+<div class="foot">
+    <footer>&copyCopyright2022 Privacy policy | Term of use</footer>
+   
+    </div>
+
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links")
+        var tabcontents=document.getElementsByClassName("tab-contents")
+    
+        function opentab(tabname){
+           for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+           }
+           for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+           }
+           event.currentTarget.classList.add("active-link")
+          document.getElementById(tabname).classList.add("active-tab")
+        }
+        </script>
+       
+   <script>
+    var sidemenu = document.getElementById("sidemenu")
+   
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"}
+   </script>
+</body>
+</html>
