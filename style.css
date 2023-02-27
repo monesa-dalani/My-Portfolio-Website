@@ -341,9 +341,9 @@ html {
 /* --------------------css for small screen ---------------------------------- */
 
 @media only screen and (max-width: 467px) {
-    * {
+/*     * {
         color: blueviolet
-    }
+    } */
 
     .pic {
         
@@ -466,9 +466,9 @@ html {
 
 @media only screen and (min-width: 467px) and (max-width: 767px) {
 
-    * {
+/*     * {
         color: yellow;
-    }
+    } */
 
     .pic {
         position: absolute;
@@ -592,10 +592,10 @@ html {
 }
 
  @media only screen and (min-width: 767px) and (max-width: 1015px) {
-
+/* 
         * {
             color: red;
-        }
+        } */
         .card-content {
             padding: 20px;
         }
